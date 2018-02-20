@@ -1,6 +1,7 @@
 # work_site
 
 > A Vue.js project
+> A Personal website to showcase my projects, learn sass, ESLint, e2e testing and karma, as well as attract potential clients
 
 ## Build Setup
 
