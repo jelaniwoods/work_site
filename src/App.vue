@@ -9,10 +9,12 @@
 </template>
 
 <script>
+import Hero from './components/Hero.vue'
 import Contact from './components/Contact.vue'
 import Porfolio from './components/Portfolio.vue'
 export default {
   components: {
+    'hero': Hero,
     'contact': Contact,
     'portfolio': Porfolio
   },

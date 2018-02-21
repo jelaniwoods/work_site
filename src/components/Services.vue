@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="Services">
+  <div id="services">
 
   </div>
 </template>
@@ -16,4 +16,7 @@ export default {
 </script>
 
 <style lang="css">
+  #services {
+    background-color: orange;
+  }
 </style>

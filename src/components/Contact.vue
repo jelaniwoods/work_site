@@ -1,9 +1,10 @@
 <template lang="html">
-  <div class="Contact">
+  <div id="contact">
     <h1>Interested?</h1>
     <h3>(yes)</h3>
-    <input type="text" name="email" value="">
-    <button type="button" @click="email">Contact</button>
+    <input type="text" v-model="email">
+    <br>
+    <button type="button" @click="sendMail">Contact</button>
   </div>
 </template>
 
@@ -11,11 +12,11 @@
 export default {
   data () {
     return {
-
+      email: ''
     }
   },
   methods: {
-    email () {
+    sendMail () {
     }
   }
 
@@ -23,4 +24,8 @@ export default {
 </script>
 
 <style lang="css">
+#contact {
+  padding: 10px;
+  background-color: lightblue;
+}
 </style>

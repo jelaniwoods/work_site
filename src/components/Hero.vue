@@ -1,7 +1,7 @@
 <template>
-  <div class="hero">
+  <div id="hero">
     <div class="logo">
-      JMW
+      <router-link to="home">JMW</router-link>
     </div>
     <nav>
       <ul>
@@ -36,5 +36,10 @@ li {
 }
 a {
   color: #42b983;
+}
+#hero {
+  background-color: darkgrey;
+  padding: 0px;
+  margin: 0;
 }
 </style>
