@@ -40,6 +40,8 @@ a {
 #hero {
   background-color: darkgrey;
   padding: 0px;
-  margin: 0;
+  margin: 0px;
+  max-height: 800px;
+  height: 80vh;
 }
 </style>

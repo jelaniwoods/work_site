@@ -5,6 +5,7 @@
     <input type="text" v-model="email">
     <br>
     <button type="button" @click="sendMail">Contact</button>
+    <footer>email: @jelanimwoods@email.com <br> &copy; JMW</footer>
   </div>
 </template>
 
@@ -27,5 +28,8 @@ export default {
 #contact {
   padding: 10px;
   background-color: lightblue;
+}
+footer {
+  padding: 10px;
 }
 </style>

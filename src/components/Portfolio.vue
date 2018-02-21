@@ -4,7 +4,7 @@
       <div id="col1" class="col-lg-3">
         <!-- <img @mouseover="showCaption" src="../assets/img/butterfly.jpg" alt=""> -->
         <div class="skill-container">
-          <img @mouseover="showCaption" src="../assets/img/actor.jpg" alt="">
+          <img @click="lightbox(1)" @mouseover="showCaption" src="../assets/img/actor.jpg" alt="">
           <div class="cap-con">
             <p v-show="!hide" class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor/</p>
           </div>
@@ -12,7 +12,7 @@
       </div>
       <div id="col2" class="col-lg-3">
         <div class="skill-container">
-          <img @mouseover="showCaption" src="../assets/img/butterfly.jpg" alt="">
+          <img @click="lightbox(2)" @mouseover="showCaption" src="../assets/img/butterfly.jpg" alt="">
           <div class="cap-con">
             <p v-show="!hide" class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor/</p>
           </div>
@@ -20,7 +20,7 @@
       </div>
       <div id="col3" class="col-lg-3">
         <div class="skill-container">
-          <img @mouseover="showCaption" src="../assets/img/flower.jpg" alt="">
+          <img @click="lightbox(3)" @mouseover="showCaption" src="../assets/img/flower.jpg" alt="">
           <div class="cap-con">
             <p  class="caption">Butt fajcodnas cjdpsj d do eiusmod tempor/</p>
           </div>
@@ -31,7 +31,7 @@
       <div class="col-lg-3"></div>
       <div class="col-lg-3">
         <div class="skill-container">
-          <img src="../assets/img/butterfly.jpg" alt="">
+          <img @click="lightbox(4)" src="../assets/img/butterfly.jpg" alt="">
           <div class="cap-con">
             <p class="caption">BOTTOM ROOOOOOWWW eiusmod tempor/</p>
           </div>
@@ -55,6 +55,9 @@ export default {
     showCaption () {
       this.hide = !this.hide
       console.log('hovering')
+    },
+    lightbox (num) {
+      console.log(num)
     }
   }
 }
