@@ -1,33 +1,26 @@
 <template>
   <div class="hero">
-
     <div class="logo">
       JMW
     </div>
     <nav>
       <ul>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><router-link to="services">Services</router-link></li>
+        <li><router-link to="portfolio">Portfolio</router-link></li>
+        <li><router-link to="contact">Contact</router-link></li>
       </ul>
     </nav>
-
-
-
   </div>
 </template>
-
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'JMW',
   data () {
     return {
-      
     }
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {

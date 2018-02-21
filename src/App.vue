@@ -1,11 +1,21 @@
 <template>
   <div id="app">
-    <router-view/>
+    <!-- <router-view/> -->
+    <hero></hero>
+    <portfolio></portfolio>
+    <contact></contact>
+    <!-- <router-view ></router-view> -->
   </div>
 </template>
 
 <script>
+import Contact from './components/Contact.vue'
+import Porfolio from './components/Portfolio.vue'
 export default {
+  components: {
+    'contact': Contact,
+    'portfolio': Porfolio
+  },
   name: 'App'
 }
 </script>
