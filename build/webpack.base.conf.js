@@ -86,7 +86,7 @@ module.exports = {
           options: {
             includePaths: ["absolute/path/a", "absolute/path/b"]
           }
-        }
+        }]
       }
     ]
   },
